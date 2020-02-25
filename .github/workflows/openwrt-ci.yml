@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: 编译树莓派4B32位固件
+name: 编译树莓派4B64位固件
 
 on:
    push:
@@ -99,8 +99,8 @@ jobs:
           # 编译树莓派4B32位固件:
           cat >> .config <<EOF
           CONFIG_TARGET_brcm2708=y
-          CONFIG_TARGET_brcm2708_bcm2709=y
-          CONFIG_TARGET_brcm2708_bcm2709_DEVICE_rpi-2=y
+          CONFIG_TARGET_brcm2708_bcm2711=y
+          CONFIG_TARGET_brcm2708_bcm2711_DEVICE_rpi-4=y
           EOF
 
           # 固件压缩:
