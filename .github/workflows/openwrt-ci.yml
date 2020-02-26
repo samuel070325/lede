@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: 编译树莓派4B64位固件
+name: 树莓派4B64位固件二次编译
 
 on:
    push:
@@ -199,6 +199,7 @@ jobs:
           CONFIG_PACKAGE_libstdcpp=y
           CONFIG_PACKAGE_libuv=y
           CONFIG_PACKAGE_libwebsockets-full=y
+          CONFIG_PACKAGE_swconfig=y
           CONFIG_PACKAGE_luci-app-frpc=y
           CONFIG_PACKAGE_luci-app-mwan3=y
           CONFIG_PACKAGE_luci-app-mwan3helper=y
