@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: 树莓派4B64位固件二次编译
+name: 树莓派4B64位固件三次编译--20200325
 
 on:
    push:
@@ -215,6 +215,8 @@ jobs:
           CONFIG_PACKAGE_luci-app-webadmin=y
           CONFIG_PACKAGE_luci-app-wireguard=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
+          CONFIG_PACKAGE_luci-app-zerotier=y
+          CONFIG_PACKAGE_luci-i18n-zerotier-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-mwan3-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-mwan3helper-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-smartdns-zh-cn=y
@@ -230,6 +232,7 @@ jobs:
           CONFIG_PACKAGE_luci-theme-bootstrap-mod=y
           CONFIG_PACKAGE_luci-theme-material=y
           CONFIG_PACKAGE_luci-theme-netgear-mc=y
+          CONFIG_PACKAGE_zerotier=y
           CONFIG_PACKAGE_mwan3=y
           CONFIG_PACKAGE_nano=y
           CONFIG_PACKAGE_resolveip=y
