@@ -10,12 +10,9 @@
 name: 树莓派4B64位固件三次编译--20200325
 
 on:
-   push:
-    branches:
-      - master
-    schedule:
-      - cron: 0 20 * * *
-    release:
+  schedule:
+    - cron: 0 20 * * *
+  release:
     types: [published]
 
 jobs:
